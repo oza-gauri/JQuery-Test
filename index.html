@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>jQuery Test</title>
+	  <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <!--Custom CSS-->
+      <link href="assets/css/master.css" rel="stylesheet">
+      <!--Icon font css-->
+      <link href="assets/css/font-awesome.css" rel="stylesheet">
+	  <!-- jQuery script source -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel = "stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/Tabslet-master/jquery.tabslet.js" type="text/Javascript"></script>
+    <script src="assets/Tabslet-master/jquery.tabslet.min.js" type="text/Javascript"></script>
+	<!-- Script starts here -->
+    <script type="text/Javascript">
+		$( function() {
+			$( "#tabs" ).tabs();
+		});
+		$(document).ready(function() {
+		    $("#tabs1").click(function(){
+				$('#tabs-1').show();
+				$('#tabs-2').hide();
+				$('#tabs-3').hide();
+				$('#tabs-4').hide();
+				$('#tabs-5').hide();
+				});
+	
+			$("#tabs2").click(function(){
+				$('#tabs-2').show();
+				$('#tabs-1').hide();
+				$('#tabs-3').hide();
+				$('#tabs-4').hide();
+				$('#tabs-5').hide();
+				});
+	
+			$("#tabs3").click(function(){
+				$('#tabs-3').show();
+				$('#tabs-1').hide();
+				$('#tabs-2').hide();
+				$('#tabs-4').hide();
+				$('#tabs-5').hide();
+				});
+	
+			$("#tabs4").click(function(){
+				$('#tabs-4').show();
+				$('#tabs-1').hide();
+				$('#tabs-2').hide();
+				$('#tabs-3').hide();
+				$('#tabs-5').hide();
+				});
+	
+			$("#tabs5").click(function(){
+				$('#tabs-5').show();
+				$('#tabs-1').hide();
+				$('#tabs-2').hide();
+				$('#tabs-3').hide();
+				$('#tabs-4').hide();
+				});
+	
+			$("#start").click(function(){
+				$('#tabs').tabslet({
+				autorotate: true,
+				delay: 1000
+				});
+			});
+	
+			$("#stop").click(function(){
+				location.reload(true);
+				});
+		});
+	
+	</script>
+	<!-- Script ends here -->
+</head>
+<body>
+<header>
+	<center>
+		<h3>Name: Gauri Oza</h3>
+		<h3>Test No::25 </h3>
+	</center>	
+</header>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Responsive tab 1</a></li>
+    <li><a href="#tabs-2">Responsive tab 2</a></li>
+    <li><a href="#tabs-3">Responsive tab 3</a></li>
+	<li><a href="#tabs-4">Responsive tab 4</a></li>
+	<li><a href="#tabs-5">Responsive tab 5</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p><b>Tab1</b>   Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p><b>Tab2</b>   Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas fesfsgfsg.</p>
+  </div>
+  <div id="tabs-3">
+    <p><b>Tab3</b>   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.Phasellus ipsum. Nunc tristique tempus lectus.</p>
+   </div>
+   <div id="tabs-4">
+    <p><b>Tab4</b>   Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet Phasellus ipsum. Nunc tristique tempus lectus.</p>
+   </div>
+   <div id="tabs-5">
+    <p><b>Tab5</b>   Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+   </div>
+</div>
+</br>
+<div class = "first">
+<button type ="button" id="start">Start Rotation</button>
+<button type ="button" id="stop">Stop Rotation</button> </br>
+</div>
+</br>
+<div class ="second">
+<button type ="button" id="tabs1">Tab 1</button>
+<button type ="button" id="tabs2">Tab 2</button>
+<button type ="button" id="tabs3">Tab 3</button>
+<button type ="button" id="tabs4">Tab 4</button>
+<button type ="button" id="tabs5">Tab 5</button>
+</div>
+</body>
+</html>
